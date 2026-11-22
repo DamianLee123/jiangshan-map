@@ -49,8 +49,8 @@
     bar.id = 'xingji-attribution';
     bar.className = 'xingji-attribution';
     bar.innerHTML =
-      '<span class="xingji-attribution-label">行迹</span>' +
-      '<span>基于开源项目 <a href="https://github.com/DeanChensj/jiangshan-map" target="_blank" rel="noopener noreferrer">江山时序</a> 的第三方衍生（非官方站点）· GPL-3.0</span>';
+      '<span class="xingji-attribution-label">非官方</span>' +
+      '<span>第三方衍生 · 基于 <a href="https://github.com/DeanChensj/jiangshan-map" target="_blank" rel="noopener noreferrer">江山时序</a>（GPL-3.0）· 非 deanchen.me 官方站</span>';
     const header = document.getElementById('nav-bar');
     const shell = document.getElementById('atlas-shell');
     if (shell && header) shell.insertBefore(bar, header.nextSibling);

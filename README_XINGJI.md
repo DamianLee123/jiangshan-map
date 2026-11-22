@@ -36,6 +36,13 @@ docker compose down
 - 播放头小红旗 + 朱砂示意弧线（图例见左下说明）。
 - 数据来源：本地 `js/xingji/maozedong_journey.js`（由 `scripts/xingji/build_maozedong_pack.js` 生成）。
 
+## PRD 1.7 必过（本分支）
+
+- **品牌**：左上主标「行迹」；人物主标题为毛泽东「星火燎原」；页内可见「基于江山时序」「非官方」及上游 GitHub 链接（非仅 README）。
+- **继续往下**：拐点面板收起后轨迹与红旗立即恢复播放。
+- **人物–地图同步**：人物行迹模式下年代/疆域随所选人物跳转，不触发全局中国全史自动播放。
+- 验收截图见 PR #1 附件：`brand_mao_epithet.png`、`inflection_before_continue.png`、`inflection_after_continue.png`、`mao_early_hunan.png`、`mao_late_1949.png`、`sushi_smoke.png`。
+
 ## 上游链接
 
 请在页面与文档中保留指向上游的可见链接：<https://github.com/DeanChensj/jiangshan-map>

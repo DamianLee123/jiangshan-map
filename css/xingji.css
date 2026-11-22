@@ -5,11 +5,57 @@
   font-size: 0.72rem;
   line-height: 1.35;
   color: #6b5348;
-  padding: 0.15rem 0 0.35rem;
   text-align: center;
   padding: 0.35rem 1rem;
   background: rgba(243, 238, 228, 0.92);
   border-bottom: 1px solid #e0d5c4;
+}
+
+.xingji-attribution.is-compact {
+  font-size: 0.68rem;
+  padding: 0.28rem 0.75rem;
+}
+
+.xingji-epithet-heading {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #9e3a26;
+  letter-spacing: 0.04em;
+  margin-top: 0.15rem;
+  white-space: nowrap;
+}
+
+.xingji-epithet-heading.is-hidden {
+  display: none;
+}
+
+#txt-subtitle a {
+  color: #9e3a26;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.xingji-nonofficial-tag {
+  display: inline-block;
+  margin: 0 0.15rem;
+  padding: 0 0.35rem;
+  border: 1px solid #c9b8a6;
+  border-radius: 3px;
+  font-size: 0.72em;
+  color: #8b3c2a;
+  background: rgba(255, 252, 245, 0.9);
+}
+
+#nav-bar .brand-group {
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+#nav-bar .brand-group h1 {
+  flex-wrap: wrap;
+  white-space: normal;
 }
 
 .xingji-attribution a {

@@ -189,6 +189,16 @@
 
   function continueFromInflection(ctrl) {
     hideInflectionPanel(ctrl);
+    if (typeof ctrl._renderPersonPinsOverlay === 'function') {
+      ctrl._renderPersonPinsOverlay();
+    }
+    const idx = ctrl.activePersonEventIdx;
+    const ev = ctrl.activePerson.events[idx];
+    if (ev) {
+      ctrl._xingji = ctrl._xingji || {};
+      ctrl._xingji.flagCoord = ev.coord;
+      renderFlag(ctrl, ev.coord);
+    }
     if (!ctrl.personTimer && ctrl.activePerson) {
       ctrl.personTimer = setInterval(
         () => ctrl._personAutoplayTick(),
@@ -196,7 +206,7 @@
       );
       ctrl._updateAutoplayUi();
     }
-    ctrl._scheduleXingjiAutoplayStep(ctrl);
+    requestAnimationFrame(() => ctrl._scheduleXingjiAutoplayStep(ctrl));
   }
 
   function replaySegment(ctrl) {
