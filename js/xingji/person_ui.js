@@ -97,6 +97,7 @@
     ctrl._bandClip = [from, to];
     ctrl.minYear = from;
     ctrl.maxYear = to;
+    if (typeof ctrl._initTimelineBands === 'function') ctrl._initTimelineBands();
     if (typeof ctrl._buildScrubberBands === 'function') ctrl._buildScrubberBands();
     if (typeof ctrl._setScrubberView === 'function') ctrl._setScrubberView(0, 1);
     const inp = ctrl._id && ctrl._id('inp-year');
@@ -125,6 +126,7 @@
     ctrl.minYear = saved.minYear;
     ctrl.maxYear = saved.maxYear;
     ctrl._bandClip = saved.bandClip;
+    if (typeof ctrl._initTimelineBands === 'function') ctrl._initTimelineBands();
     if (typeof ctrl._buildScrubberBands === 'function') ctrl._buildScrubberBands();
     if (typeof ctrl._setScrubberView === 'function') ctrl._setScrubberView(0, 1);
     const inp = ctrl._id && ctrl._id('inp-year');
