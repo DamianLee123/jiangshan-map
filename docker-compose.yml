@@ -7,5 +7,6 @@ services:
     image: jiangshan-map:latest
     container_name: jiangshan-map
     ports:
+      - "8088:80"
       - "8008:80"
     restart: unless-stopped

@@ -1,0 +1,206 @@
+/* 行迹 · derivative UI (inflection cards, attribution, playhead flag) */
+
+.xingji-attribution {
+  width: 100%;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  color: #6b5348;
+  text-align: center;
+  padding: 0.35rem 1rem;
+  background: rgba(243, 238, 228, 0.92);
+  border-bottom: 1px solid #e0d5c4;
+}
+
+.xingji-attribution.is-compact {
+  font-size: 0.68rem;
+  padding: 0.28rem 0.75rem;
+}
+
+.xingji-epithet-heading {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #9e3a26;
+  letter-spacing: 0.04em;
+  margin-top: 0.15rem;
+  white-space: nowrap;
+}
+
+.xingji-epithet-heading.is-hidden {
+  display: none;
+}
+
+#txt-subtitle a {
+  color: #9e3a26;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.xingji-nonofficial-tag {
+  display: inline-block;
+  margin: 0 0.15rem;
+  padding: 0 0.35rem;
+  border: 1px solid #c9b8a6;
+  border-radius: 3px;
+  font-size: 0.72em;
+  color: #8b3c2a;
+  background: rgba(255, 252, 245, 0.9);
+}
+
+#nav-bar .brand-group {
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+#nav-bar .brand-group h1 {
+  flex-wrap: wrap;
+  white-space: normal;
+}
+
+.xingji-attribution a {
+  color: #9e3a26;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.xingji-attribution-label {
+  display: inline-block;
+  margin-right: 0.35rem;
+  padding: 0.05rem 0.35rem;
+  border: 1px solid #c9b8a6;
+  border-radius: 3px;
+  font-weight: 600;
+  color: #8b3c2a;
+}
+
+.xingji-route-legend {
+  margin-top: 0.45rem;
+  font-size: 0.78rem;
+  color: #6b5348;
+}
+
+.xingji-epithet {
+  margin-top: 0.25rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #b53826;
+  letter-spacing: 0.08em;
+}
+
+.xingji-pack-note {
+  margin: 0 0 0.5rem;
+  font-size: 0.82rem;
+  color: #6b5348;
+}
+
+.xingji-inflection-panel {
+  position: fixed;
+  z-index: 55;
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: calc(6.5rem + env(safe-area-inset-bottom));
+  width: min(22rem, calc(100vw - 2rem));
+  max-height: min(42vh, 22rem);
+  overflow: auto;
+  pointer-events: auto;
+  background: rgba(248, 241, 228, 0.94);
+  border: 1px solid rgba(181, 56, 38, 0.35);
+  border-radius: 8px;
+  box-shadow: 0 8px 28px rgba(52, 28, 18, 0.18);
+  backdrop-filter: blur(6px);
+}
+
+.xingji-inflection-panel.is-hidden {
+  display: none;
+}
+
+.xip-inner {
+  padding: 0.85rem 1rem 0.95rem;
+}
+
+.xip-kicker {
+  font-size: 0.72rem;
+  color: #8b3c2a;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.25rem;
+}
+
+.xip-title {
+  margin: 0 0 0.35rem;
+  font-size: 1.12rem;
+  color: #3d2518;
+}
+
+.xip-time {
+  font-size: 0.82rem;
+  color: #6b5348;
+  margin-bottom: 0.5rem;
+}
+
+.xip-body {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #3d2518;
+  margin-bottom: 0.6rem;
+}
+
+.xip-sources {
+  margin: 0 0 0.75rem;
+  font-size: 0.75rem;
+  color: #6b5348;
+  line-height: 1.45;
+}
+
+.xip-sources-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.xip-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.xip-btn {
+  border: 1px solid #c9b8a6;
+  background: #f5eee2;
+  color: #4a3022;
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.xip-btn.primary {
+  border-color: #b53826;
+  background: #c9412c;
+  color: #fff;
+}
+
+.xip-btn:hover {
+  filter: brightness(1.03);
+}
+
+/* Playhead red flag (single marker) */
+.xingji-playhead-flag .xj-flag-cloth {
+  fill: #d62828;
+  stroke: #8f1d1d;
+  stroke-width: 0.6;
+}
+
+.xingji-playhead-flag .xj-flag-pole {
+  stroke: #5c1f12;
+  stroke-width: 1.2;
+  stroke-linecap: round;
+}
+
+@media (max-width: 900px) {
+  .xingji-inflection-panel {
+    right: 0.75rem;
+    left: 0.75rem;
+    width: auto;
+    bottom: calc(7.5rem + env(safe-area-inset-bottom));
+  }
+}

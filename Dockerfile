@@ -13,6 +13,7 @@ FROM nginx:alpine
 COPY --chmod=a+rX index.html manifest.webmanifest robots.txt sitemap.xml llms.txt /usr/share/nginx/html/
 COPY --chmod=a+rX assets /usr/share/nginx/html/assets
 COPY --chmod=a+rX css /usr/share/nginx/html/css
+COPY --chmod=a+rX js/xingji /usr/share/nginx/html/js/xingji
 COPY --chmod=a+rX js /usr/share/nginx/html/js
 COPY --chmod=a+rX geojson /usr/share/nginx/html/geojson
 COPY --from=topics-builder --chmod=a+rX /src/topics /usr/share/nginx/html/topics

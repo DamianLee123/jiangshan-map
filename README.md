@@ -1,5 +1,7 @@
 # Chronicles of the Realm · 江山时序
 
+> **Derivative fork note (行迹):** This repository may be used as a third-party derivative of [jiangshan-map](https://github.com/DeanChensj/jiangshan-map) under GPL-3.0. It is **not** the official Jiangshan site. See [README_XINGJI.md](README_XINGJI.md) for local preview on port 8088 and Mao route (`?person=maozedong`).
+
 <p align="left">
   <strong>English</strong> · <a href="README_ZH.md">简体中文 (Chinese)</a> · <a href="README_ZH_HANT.md">繁體中文 (Traditional Chinese)</a> · <a href="README_JA.md">日本語 (Japanese)</a>
 </p>
