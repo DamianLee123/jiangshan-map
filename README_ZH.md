@@ -1,5 +1,7 @@
 # 江山时序 · Chronicles of the Realm
 
+> **Fork 衍生说明（行迹）**：本仓库可作为 [jiangshan-map](https://github.com/DeanChensj/jiangshan-map) 的第三方 GPL-3.0 衍生项目使用，**并非**江山时序官方站点。本地预览与毛泽东「星火燎原」行迹见 [README_XINGJI.md](README_XINGJI.md)。
+
 <p align="left">
   <a href="README.md">English</a> · <strong>简体中文</strong> · <a href="README_ZH_HANT.md">繁體中文</a> · <a href="README_JA.md">日本語</a>
 </p>
