@@ -204,3 +204,53 @@
     bottom: calc(7.5rem + env(safe-area-inset-bottom));
   }
 }
+
+/* PRD 1.8: hide upstream product chrome on 行迹 play page */
+html.xingji-derivative #act-locale,
+html.xingji-derivative .locale-pill-group,
+html.xingji-derivative #act-github-star,
+html.xingji-derivative #act-more-menu,
+html.xingji-derivative #more-popover {
+  display: none !important;
+}
+
+.xingji-person-scrub-label {
+  position: absolute;
+  left: 0.35rem;
+  top: -1.35rem;
+  font-size: 0.7rem;
+  color: #8b3c2a;
+  letter-spacing: 0.04em;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.xingji-person-scrub-label.is-hidden {
+  display: none;
+}
+
+.xingji-person-trail #timeline-start,
+.xingji-person-trail #timeline-end,
+.xingji-person-trail #timeline-crop-mask-left,
+.xingji-person-trail #timeline-crop-mask-right {
+  display: none !important;
+}
+
+.xingji-person-trail #dynasty-bands .band-cell {
+  pointer-events: none;
+}
+
+.xingji-person-trail .journey-dir-mark .journey-chevron {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+.xingji-person-trail .journey-track-thread.is-overview,
+.xingji-person-trail .journey-track-passed,
+.xingji-person-trail .journey-track-upcoming {
+  stroke-width: 3.2;
+}
+
+#lnk-dynasty-topic.is-hidden {
+  display: none !important;
+}
