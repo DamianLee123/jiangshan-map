@@ -41,7 +41,13 @@ docker compose down
 - **品牌**：左上主标「行迹」；人物主标题为毛泽东「星火燎原」；页内可见「基于江山时序」「非官方」及上游 GitHub 链接（非仅 README）。
 - **继续往下**：拐点面板收起后轨迹与红旗立即恢复播放。
 - **人物–地图同步**：人物行迹模式下年代/疆域随所选人物跳转，不触发全局中国全史自动播放。
-- 验收截图见 PR #1 附件：`brand_mao_epithet.png`、`inflection_before_continue.png`、`inflection_after_continue.png`、`mao_early_hunan.png`、`mao_late_1949.png`、`sushi_smoke.png`。
+
+## PRD 1.8（界面改法）
+
+- 播放页去掉右上角 **EN**、**GitHub Star**、**⋯** 等上游运营控件（GPL 署名仍留在副标题与页内链接）。
+- 人物行迹模式下底部时间轴裁切为该人足迹年份（毛泽东 **1893—1949**）；不再以战国起点的整史主控轴呈现。
+- 右侧「重大事件」仅列该人物数据包节点；不含 1951 以后共和国总览条目。
+- 裸 `?year=` 链会自动补上 `person=maozedong`，避免落入上游总览；`?person=sushi` / `?person=maozedong` 验收须见地址栏人物参数。
 
 ## 上游链接
 
